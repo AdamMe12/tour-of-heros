@@ -1,0 +1,2 @@
+Delete all local branches that have been merged to main branch
+git branch --merged main | grep -v "^\* main" | xargs -n 1 -r git branch -d
